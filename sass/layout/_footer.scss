@@ -1,0 +1,26 @@
+.footer {
+    height:14rem;
+    // border-top: 1px solid rgba(126, 144, 184, 0.281);
+    background-color: rgba(99, 99, 99, 0.8);
+    color: black;
+    width: 100%;
+    // position: relative;
+    bottom:0;
+
+    &__copyrights {
+        
+        height:14rem;
+        display:flex;
+        font-size: 3rem;
+        font-weight: 100;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0 ,.4);
+        font-family: 'Big Shoulders Display', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+main {
+    // height:800px;
+}

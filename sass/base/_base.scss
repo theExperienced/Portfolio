@@ -1,0 +1,49 @@
+
+*, *::after, *::before {
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+    @include respond(tab-land) {
+        font-size:56.25%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+a:active,
+a:visited,
+a:focus {
+    // color: inherit;
+
+    &, a:link {
+        text-decoration: none;
+
+    }
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}

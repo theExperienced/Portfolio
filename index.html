@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="progress">
+        <div class="progress__bar"></div>
+        <div class="progress__overlay"></div>
+    </div> -->
+    <div class="container">
+        
+        <div class="splash">
+            <div class="splash__heading-container">
+                <h1 class="splash__heading">
+                    <span class="splash__heading--top"><span class="splash__heading--capital">D</span><span class="splash__heading--uncapital">aniel</span></span>
+                    <span class="splash__heading--bottom"><span class="splash__heading--capital">M</span><span class="splash__heading--uncapital">izrachi</span></span>
+                </h1>
+            </div>
+            <div class="splash__grid-art">
+                <div class="splash__grid-block splash__grid-block--1">W</div>
+                <div class="splash__grid-block splash__grid-block--2">eb</div>
+                <div class="splash__grid-block splash__grid-block--3">D</div>
+                <div class="splash__grid-block splash__grid-block--4">e</div>
+                <div class="splash__grid-block splash__grid-block--5">ve</div>
+                <div class="splash__grid-block splash__grid-block--6">l</div>
+                <div class="splash__grid-block splash__grid-block--7">o</div>
+                <div class="splash__grid-block splash__grid-block--8">per</div>
+                <!-- <div class="splash__grid-block"></div>
+                <div class="splash__grid-block"></div> -->
+            </div>
+            <div class="splash__overlay"></div>
+        </div>
+        <header class="header">
+            <ul class="header__nav">
+                <li class="header__nav-item"><a class="header__nav-link header__nav-link--myself" href="#myself-section">Myself</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header__nav-link--skills" href="#skills-section">Skills</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header__nav-link--ambitions" href="#ambitions-section">Ambitions</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header__nav-link--projects" href="#projects-section">Projects</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header__nav-link--contact" href="#contact-section">Contact</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <section id="myself-section" class="section myself-section">
+                <div class="myself-section__container">
+                    <div class="myself-section__heading-container">
+                        <h2 class="section-heading">myself</h2>
+                    </div>
+                    <div class="myself-section__list-container">
+                        <ul class="myself-section__list"> 
+                            <li class="myself-section__list-item">Having been introduced to HTML back in the the desolate web scenery of the early 2000's, I am virtually a self taught front end web developer </li>
+                            <!-- <li class="myself-section__list-item">A fledging front-end developer</li> -->
+                            <li class="myself-section__list-item">All the while dabbling in other languages and technologies</li> 
+                            <li class="myself-section__list-item">Harnessing the powers of mindfulness meditation to get inspired </li>
+                            <li class="myself-section__list-item">On the lookout for cutting edge, cool CSS features (Nevermind Chrome is the sole supporting browser)</li>
+                            <li class="myself-section__list-item">An avid believer in the timeless <blockquote><i><sup>&#10077;</sup> Sharing is Caring <sub>&#10078;</sub></i></blockquote></li>
+                        </ul>
+                    </div>  
+                </div>
+            </section>
+            <section id="skills-section" class="section skills-section">
+                <div class="skills-section__container">
+
+                </div>
+            </section>
+            <section id="ambitions-section" class="section ambitions-section">
+                <div class="ambitions-section__container">
+
+                </div>
+            </section>
+            <section id="projects-section" class="section projects-section">
+            </section>
+            <section id="contact-section" class="section contact-section">
+                <div class="contact-section__heading-container">
+                    <h2 class="section-heading contact-section__heading">contact</h2>
+                </div>
+                <div class="contact-section__container">
+                    <form action="" class="contact-form">
+                        <div class="contact-form__group">
+                            <label for="" class="contact-form__label">Name</label>
+                            <input type="text" class="contact-form__input contact-form__input--name">
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="" class="contact-form__label">Email</label>
+                            <input type="text" class="contact-form__input contact-form__input--email">                            
+                        </div>
+                        <div class="contact-form__group contact-form__group--message">
+                                <label for="" class="contact-form__label">Your words</label>
+                            <textarea type="text" class="contact-form__input contact-form__input--message"></textarea>
+                        </div>
+                        <button class="contact-form__submit">Go</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p class="footer__copyrights">© 2019 Daniel Mizrachi. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        let vh = (window.innerHeight || document.documentElement.clientHeight);
+        window.addEventListener('scroll', function(scroll) {
+            let yOffset = window.pageYOffset;
+            let pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let progress = (yOffset / pageHeight) * 100 - 2;
+            // console.log(progress);
+            document.getElementsByClassName('progress__overlay')[0].style.left = progress + '%';
+
+
+
+            
+
+            // let progressBarOverlay = window.getComputedStyle(document.querySelector('.progress', ':after').setAttribute('background-color', 'red'));
+        });
+
+        // document.querySelectorAll('.section').forEach( function(section) {
+        //         window.addEventListener('scroll', function(scroll) {
+        //             // console.log('scroll listened');
+        //             let sectionTopPosition = window.pageYOffset - section.yOffset;
+        //             console.log(section.yOffset);
+        //             if (sectionTopPosition >= 0.5 * viewportHeight && sectionTopPosition <= 0.4 * viewportHeight) {
+        //                 section.classList.add('visible-section');
+        //             }else {
+        //                 section.classList.remove('visible-section');
+        //             }
+        //         });
+        //     });
+
+        
+            // console.log(section);
+        // window.addEventListener('scroll', function() {
+        //         console.log('scroll listened');
+            
+        // });
+
+        // window.onload = function() {
+
+        //     let 
+        // }
+    
+        // let sections = document.querySelectorAll('.section:not(:last-of-type)');
+        // let clientRects = Array.from(sections).map(function(section){
+        //     return section.getBoundingClientRect();
+        // })
+        
+        // console.log(clientRects);
+        // window.onscroll = function() {
+            
+            // let tops = clientRects.map(function(clientRect) {
+            //     return clientRect.top;
+            // });
+            // console.log(tops);
+            // let bottoms = clientRects.map(function(clientRect) {
+            //     return clientRect.bottom;
+            // });
+
+            // sections.forEach(function(section, index) {
+
+            //     let rect = section.getBoundingClientRect();
+          
+            //     if ((rect.top < 0.3 * vh && rect.top > 0.5 * vh) ||
+            //         (rect.bottom < 0.7 * vh && rect.bottom > 0.5 * vh)) {
+            
+            //         sections[index].classList.add('visible-section');
+            //     }else {
+            //         sections[index].classList.remove('visible-section');
+            //     }
+            // });
+        // }
+    
+    </script>
+</body>
+</html>

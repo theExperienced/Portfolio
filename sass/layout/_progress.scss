@@ -1,0 +1,34 @@
+.progress {
+    position: fixed;
+    height: 5px;
+    width: 100%;
+    z-index: 1000;
+
+    &__bar {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgb(230, 74, 230), rgb(255, 108, 127));
+    }
+
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: -3%;
+        width: 102%;
+        height: 100%;
+        background-position-x: -1.5rem;
+        background-image: linear-gradient(to right, transparent 1%, rgba(0,0, 0, .4) 1.8%, rgba(0,0, 0, .4) 1.8%);
+        // z-index: 11;
+    }
+
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top:0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 5px;
+    //     background: black;
+    // }
+}

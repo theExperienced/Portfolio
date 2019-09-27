@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  position: relative; }
+
+a:active,
+a:visited,
+a:focus {
+  color: inherit; }
+  a:active, a:active a:link,
+  a:visited,
+  a:visited a:link,
+  a:focus,
+  a:focus a:link {
+    text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+.splash {
+  height: 600px;
+  background: black; }
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 110px;
+  background-color: #ffd4ff;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  border-bottom: 2px solid rgba(113, 22, 136, 0.253); }
+  .header__nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 10rem; }
+  .header__nav-link {
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: background-position .15s ease-in;
+    color: transparent;
+    background-image: linear-gradient(-40deg, #4599d1 45%, #424242 50%);
+    background-size: 260%;
+    background-clip: text;
+    -webkit-background-clip: text; }
+    .header__nav-link:hover {
+      text-shadow: none;
+      background-position: 100%; }
+    .header__nav-link::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      border-radius: 20px;
+      transition: width .1s .1s ease-in;
+      background-color: #4447de; }
+
+body {
+  height: 200vh; }
+
+.footer {
+  height: 12rem;
+  border-top: 1px solid rgba(126, 144, 184, 0.5);
+  background-color: rgba(66, 120, 236, 0.1);
+  color: black;
+  display: flex;
+  justify-content: center; }
+  .footer__copyrights {
+    line-height: 12rem;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 1px; }
+
+.progress {
+  position: fixed;
+  height: 5px;
+  width: 100%;
+  z-index: 1000; }
+  .progress__bar {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #7ea7ff, #42ff8a); }
+  .progress__overlay {
+    position: absolute;
+    top: 0;
+    left: -3%;
+    width: 109%;
+    height: 100%;
+    background-position-x: -7rem;
+    background-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 0.4) 1.8%, rgba(0, 0, 0, 0.4) 1.8%); }
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 5px; }
+
+.myself-section {
+  height: 400px;
+  background: white; }
+
+.ambitions-section {
+  height: 400px;
+  background: yellow; }
+
+.projects-section {
+  height: 400px;
+  background: red; }
+
+.contact-section {
+  height: 400px;
+  background: white; }
