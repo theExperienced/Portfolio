@@ -38,7 +38,7 @@
         width: 32rem;
         // font-family: 'Notable', sans-serif;
         font-family: 'Lobster', cursive;
-        font-size: 14rem;
+        font-size: 18rem;
         // text-shadow:  -5rem 0 0px rgb(158, 55, 55),  3px 3px 0px rgb(255, 255, 255), 
         //               2px 1px 1px rgb(124, 131, 128);
         -webkit-box-decoration-break: clone;
@@ -68,13 +68,13 @@
         &--uncapital {
             // text-decoration: underline;
             // line-height: .85;
-            font-size: 4rem;
+            font-size: 5rem;
         }
         
         &--capital {
             
             background-color: none;
-            text-shadow: 0 0 1px rgb(255, 255, 255), -.6rem .2rem 1px rgb(255, 147, 147), .6rem -.2rem 1px rgb(102, 212, 255);
+            text-shadow: 0 0 1px rgb(255, 255, 255), -.7rem .3rem 1px rgb(255, 147, 147), .7rem -.3rem 1px rgb(102, 212, 255);
         }
 
     }

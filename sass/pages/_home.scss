@@ -30,17 +30,26 @@
     background-image:linear-gradient(to top, rgba(163, 30, 30, .15), white);
     z-index: 5;
 
+    &__heading-container {
+        margin-bottom: 4rem;
+    }
+
     &__container {
-        // @include hide-content;
+        border-radius: .7rem;
+        background-color: white;
+        box-shadow: 0 0 0 2rem rgba(124, 124, 236, 0.5);
+        padding: 3rem;
+        margin-left: 8rem;
+        width: 75%;
     }
 
-    &__list-container {
+    // &__list-container {
 
-    }
+    // }
     
-    &__list {
-        // font-size: 
-    }
+    // &__list {
+    //     // font-size: 
+    // }
 }
 
 .skills-section {
@@ -79,7 +88,7 @@
     }
 
     &__container {
-        padding-left: 5rem;
+        padding: 0 5rem;
         // width: 60%;
         // margin-bottom: 3rem;
     

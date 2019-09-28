@@ -4,10 +4,10 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Dosis|Josefin+Sans|Quicksand|Titillium+Web|Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Notable|Vibes&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Notable|Cute+Font&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Vollkorn|Josefin+Slab&display=swap');
 .section-heading {
 
     font-size: 7rem;
@@ -17,12 +17,15 @@
     // font-family: 'Josefin Sans', sans-serif;
     // font-family: 'Anton', sans-serif;
     color: rgba(0, 0, 0, .3);
-    font-weight: 100;
+    font-weight: 900;
     text-transform: uppercase;
 
 }
 
-.myself-section {
-
+.myself-section__bio {
+    color: rgba(0, 0, 0, .5);
+    font-weight: 100;
+    font-size:2.4rem;
+    font-family: 'Vollkorn', serif;
 }
 
