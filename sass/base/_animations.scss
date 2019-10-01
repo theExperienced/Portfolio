@@ -30,3 +30,40 @@
                     -3px -3px 5px rgba(235, 77, 77, .7);
     }
 }
+
+@keyframes bump {
+    0% {
+        transform: translateY(0);
+    }
+    45% {
+        transform: translateY(-70%);
+    }
+    65% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(-35%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes textarea-shimmering-lights {
+    0%{
+        transform: translate(-50%, -50%); 
+        // opacity: 0;
+    
+    }20%{
+        transform: translate(-35%, -35%); 
+        // opacity: 0;
+    
+    }30%{
+        transform: translate(0); 
+        // opacity: 0;
+    
+    }100%{
+        transform: translate(-50%, -50%); 
+        // opacity: 1;
+    }
+}

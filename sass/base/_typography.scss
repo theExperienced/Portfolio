@@ -8,17 +8,28 @@
 @import url('https://fonts.googleapis.com/css?family=Notable|Cute+Font&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Vollkorn|Josefin+Slab&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Aladin|Merienda|Satisfy|Inconsolata|Shadows+Into+Light|Shadows+Into+Light+Two|Yellowtail&display=swap');
+
 .section-heading {
 
+    position: sticky;
+    top: 15rem;
+    height: fit-content;
     font-size: 7rem;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Merienda', cursive;
+    writing-mode: vertical-rl;
+    
+    // letter-spacing: 1px;
+
     // font-family: 'Quicksand', sans-serif;
     // font-family: 'Dosis', sans-serif;
     // font-family: 'Josefin Sans', sans-serif;
     // font-family: 'Anton', sans-serif;
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .15);
     font-weight: 900;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 }
 
@@ -26,6 +37,6 @@
     color: rgba(0, 0, 0, .5);
     font-weight: 100;
     font-size:2.4rem;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Courgette', cursive;
 }
 

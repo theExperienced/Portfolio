@@ -21,3 +21,14 @@
     opacity: 0;
     visibility: collapse;
 }
+
+
+// @mixin rotate-blade-animation($blade-number) {
+//     @keyframes rotate-blade {
+//         0% {
+//             transform: rotate(0deg);
+//         }100% {
+//             transform: rotate(@rotate-blade($blade-number));
+//         }
+//     }
+// }

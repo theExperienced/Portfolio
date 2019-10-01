@@ -1,8 +1,12 @@
 .contact-form {
+
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;   
+    padding: 10rem;
+    padding-right: 12rem;
     font-family: 'Montserrat', sans-serif;
+    flex: 1;
 
     &__group {
         display: flex;
@@ -12,7 +16,7 @@
         // height: 5rem;
         // flex: 0 0 90%;
         // background:rgb(255, 255, 255);
-        margin-bottom: 3.8rem;
+        margin-bottom: 4.5rem;
 
 
         // &:focus-within {
@@ -32,8 +36,56 @@
 
         &--message {
             
+            position: relative;
+
             margin-bottom: 9rem;
+            
+            &::before {
+                content: '';
+                position:absolute;
+                bottom: 0;
+                right: 0;
+                border-radius: 100px;
+                transform: translate(50%, 50%); 
+                background-color: #fff;
+                // background-image:  radial-gradient(white, transparent 50%), radial-gradient(red, yellow, transparent 60%);
+                width: 14rem;
+                height: 14rem;
+                opacity:0;
+                visibility: hidden;
+            }
+            
+            &::after {
+                content: '';
+                position:absolute;
+                bottom: 0;
+                right: 0;
+                // border-radius: 100px;
+                // transform: translate(50%, 50%); 
+                background-color: #fff;
+                // background-image: radial-gradient(white, transparent 50%), radial-gradient(red, yellow, transparent 60%);
+                width: 5rem;
+                height: 5rem;
+                opacity:0;
+                visibility: hidden;
+                -webkit-clip-path: polygon(57% 0, 84% 76%, 100% 61%, 100% 100%, 60% 100%, 76% 84%, 0 55%);
+                clip-path: polygon(57% 0, 84% 76%, 100% 61%, 100% 100%, 60% 100%, 76% 84%, 0 55%);
+            }
             // width: 80%;
+        }
+
+        
+            
+        // &--message.message-textarea-visible::before {
+        //     opacity: 1;
+        //     visibility: visible;
+        // }
+        
+        &--message.message-textarea-visible::after {
+            opacity: 1;
+            visibility: visible;
+            transform-origin: center;
+            animation: textarea-shimmering-lights 1s 1s ease-in 4 backwards;
         }
     }
 
@@ -49,12 +101,14 @@
         // height: 1.8rem;
         transition: .2s all ease-out;
         padding: 0 .7rem;
-        height: 5rem;
-        line-height: 4.5rem;
+        height: 4.8rem;
+        color: rgba(0, 0, 0, 0.527);
+        font-size: 2rem;
+        line-height: 4.4rem;
         border-radius: .6rem;
         // border-bottom: 2px solid rgb(255, 255, 255);
-        background: rgba(255, 255, 255, 1);
-            // box-shadow: 0 0 10px 3px rgb(207, 85, 255);
+        background: rgba(0, 0, 0, .3);
+        box-shadow: inset 0 0 0 0 black, 0 0 0 0 black;
         // &::after {
         //     content:'';
         //     position: absolute;
@@ -66,18 +120,20 @@
 
         // }
 
-        &:focus {
+        &:focus, &.input-has-value:focus {
             // height: 5rem;
             // line-height: 4.5rem;
             // border-radius: .6rem;
             // // border-bottom: 2px solid rgb(255, 255, 255);
             // background: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 10px 3px rgb(207, 85, 255);
+            border: none;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 10px 3px rgb(52, 224, 138), 0 0 7px 4px rgb(255, 255, 255);
             // background: rgba(255, 255, 255, .7);
              
             &::after {
                 // content: '';
-                // width: 100%;
+                // width: 100%
                 // height:0;
                 // position: absolute;
                 // bottom: 0;
@@ -87,9 +143,26 @@
 
         }
 
+        &.input-has-value {
+            
+            background: rgba(255, 255, 255, 1);
+            box-shadow: inset 0 1rem 1rem -.8rem rgba(0, 0, 0, .25);
+            border-bottom:1px solid rgb(76, 0, 99);
+            // box-shadow: 0 0 5px 2px rgb(52, 224, 138);
+        }
+
+        &--name, &--email {
+            flex: 0 0 38%;
+        }
+
         &--message {
             flex: 1;
+            height: 16rem;  
+
+            
         }
+
+
 
 
     }
@@ -98,7 +171,7 @@
         color: white; 
         font-size: 3rem;
         line-height: 1;
-        flex: 0 0 19rem;
+        flex: 0 0 20%;
         height: 5rem;
         // text-shadow: 3px 3px .3rem  rgb(207, 85, 255),
         // 3px -3px .3rem  rgb(207, 85, 255),
@@ -110,11 +183,12 @@
 
     &__submit {
         border:none;
-        background:white ;
+        background:rgba(255, 255, 255, .95);
         // width: 10rem;
         // height:6rem;
-        color: black;
+        color: rgba(0, 0, 0, 0.5);
         align-self: center;
+        box-shadow: 0 4px 1rem 1px rgba(0, 0, 0, 0.2);
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
         text-transform: uppercase;
@@ -122,13 +196,18 @@
         padding: 1.7rem 8.4rem;
         border-radius: 50px;
         transition: all .15s linear;
-        border: 4px solid rgb(150, 16, 143);
+        border: 3px solid rgb(52, 224, 138);
         cursor: pointer;
 
         &:hover {
-            background:rgb(150, 16, 143) ;
+            background:rgb(52, 224, 138);
             color: white;
+        }
 
+        &:focus, &:active {
+            box-shadow: 0 0 .5rem 1px rgba(0, 0, 0, 0.2);
+            transform: translateY(.2rem) scale(.98);
+            
         }
     }
 
