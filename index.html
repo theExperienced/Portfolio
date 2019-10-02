@@ -13,43 +13,45 @@
         <div class="progress__overlay"></div>
     </div> -->
         
-        <div class="splash">
-            <div class="splash__container">
-                <div class="splash__heading-container">
-                    <h1 class="splash__heading">
-                        <span class="splash__heading--top"><span class="splash__heading--capital">D</span><span class="splash__heading--uncapital">aniel</span></span>
-                        <span class="splash__heading--bottom"><span class="splash__heading--capital">M</span><span class="splash__heading--uncapital">izrachi</span></span>
+        <header class="header">
+            <ul class="header__nav">
+                <li class="header__nav-item header__nav-item--myself"><a class="header__nav-link header__nav-link--myself" href="#myself-section">Myself</a></li>
+                <li class="header__nav-item header__nav-item--not-myself"><a class="header__nav-link header__nav-link--not-myself" href="#skills-section">Skills</a></li>
+                <li class="header__nav-item header__nav-item--not-myself"><a class="header__nav-link header__nav-link--not-myself" href="#ambitions-section">Ambitions</a></li>
+                <li class="header__nav-item header__nav-item--not-myself"><a class="header__nav-link header__nav-link--not-myself" href="#projects-section">Projects</a></li>
+                <li class="header__nav-item header__nav-item--not-myself"><a class="header__nav-link header__nav-link--not-myself" href="#contact-section">Contact</a></li>
+            </ul>
+            <!-- <img src="img/header-secondary.svg" alt="" class="header__secondary-background"> -->
+        </header>
+         <div class="fold">
+             
+            <!-- <div class="fold__container">
+                <div class="fold__heading-container">
+                    <h1 class="fold__heading">
+                        <span class="fold__heading--top"><span class="fold__heading--capital">D</span><span class="fold__heading--uncapital">aniel</span></span>
+                        <span class="fold__heading--bottom"><span class="fold__heading--capital">M</span><span class="fold__heading--uncapital">izrachi</span></span>
                     </h1>
                 </div>
-                <div class="splash__handfan">
-                    <div class="splash__blade splash__blade--1">W</div>
-                    <div class="splash__blade splash__blade--2">e</div>
-                    <div class="splash__blade splash__blade--3">b</div>
-                    <div class="splash__blade splash__blade--4">D</div>
-                    <div class="splash__blade splash__blade--5">e</div>
-                    <div class="splash__blade splash__blade--6">v</div>
-                    <div class="splash__blade splash__blade--7">e</div>
-                    <div class="splash__blade splash__blade--8">l</div>
-                    <div class="splash__blade splash__blade--9">o</div>
-                    <div class="splash__blade splash__blade--10">p</div>
-                    <div class="splash__blade splash__blade--11">e</div>
-                    <div class="splash__blade splash__blade--12">r</div>
-                    <!-- <div class="splash__grid-block"></div>
-                    <div class="splash__grid-block"></div> -->
+                <div class="fold__handfan">
+                    <div class="fold__blade fold__blade--1">W</div>
+                    <div class="fold__blade fold__blade--2">e</div>
+                    <div class="fold__blade fold__blade--3">b</div>
+                    <div class="fold__blade fold__blade--4">D</div>
+                    <div class="fold__blade fold__blade--5">e</div>
+                    <div class="fold__blade fold__blade--6">v</div>
+                    <div class="fold__blade fold__blade--7">e</div>
+                    <div class="fold__blade fold__blade--8">l</div>
+                    <div class="fold__blade fold__blade--9">o</div>
+                    <div class="fold__blade fold__blade--10">p</div>
+                    <div class="fold__blade fold__blade--11">e</div>
+                    <div class="fold__blade fold__blade--12">r</div>
+                     <div class="fold__grid-block"></div>
+                    <div class="fold__grid-block"></div> 
                 </div>
             </div>
             
-            <div class="splash__overlay"></div>
-        </div>
-        <header class="header">
-            <ul class="header__nav">
-                <li class="header__nav-item"><a class="header__nav-link header__nav-link--myself" href="#myself-section">Myself</a></li>
-                <li class="header__nav-item"><a class="header__nav-link header__nav-link--skills" href="#skills-section">Skills</a></li>
-                <li class="header__nav-item"><a class="header__nav-link header__nav-link--ambitions" href="#ambitions-section">Ambitions</a></li>
-                <li class="header__nav-item"><a class="header__nav-link header__nav-link--projects" href="#projects-section">Projects</a></li>
-                <li class="header__nav-item"><a class="header__nav-link header__nav-link--contact" href="#contact-section">Contact</a></li>
-            </ul>
-        </header>
+            <div class="fold__overlay"></div> -->
+        </div> 
         <main class="main">
             <section id="myself-section" class="section myself-section">
                 <!-- <div class="myself-section__heading-container"> -->
@@ -95,7 +97,7 @@
                 <ul class="ambitions-section__list">
                     <li class="ambitions-section__item">Getting to <a class="francine-link" href="http://diana-adrianne.com/purecss-francine/">this</a> level of CSS mastery</li>
                     <li class="ambitions-section__item">Further fine tuning my designer senses</li>
-                    <li class="ambitions-section__item">Conquer the SVG realm</li>
+                    <li class="ambitions-section__item">Conquering the SVG realm</li>
                     <li class="ambitions-section__item">Taming my ego</li> 
                     <li class="ambitions-section__item">Learning to fly (in Rocket League)</li>
                 </ul>
@@ -140,6 +142,8 @@
         let vh = (window.innerHeight || document.documentElement.clientHeight);
         let currentlyVisibleSectionIndex = 0;
         let header = document.querySelector('header.header');
+        let headerNav = document.querySelector('.header__nav');
+        let fold = document.querySelector('.fold');
         let headerItems = document.querySelectorAll('.header__nav-item');
         let headerLinks = document.querySelectorAll('.header__nav-link');
         let sections = document.querySelectorAll('.section');
@@ -150,37 +154,6 @@
         let scrollTop;
         
 
-        window.addEventListener('scroll', function(scroll) {
-            let yOffset = window.pageYOffset;
-            let pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-            // console.log(progress);
-            // document.getElementsByClassName('progress__overlay')[0].style.left = progress + '%';
-
-            // if (header.getBoundingClientRect().top >= 0 && header.getBoundingClientRect().top < 5) {
-            if(scrollTop > 1.1 * vh) {
-                header.classList.add('header-stuck');
-                renderHeaderLinksStuck();
-
-            }else {
-                header.classList.remove('header-stuck');
-                renderHeaderLinksUnstuck();
-            }
-
-            // sectionRects = Array.from(sections).map(section => section.getBoundingClientRect());
-            // sectionRects.forEach(function(sectionRect, index) {
-                
-            //     console.log("INDEX:" + index + "top:    " + sectionRect.top + "height:   " + sectionRect.height);
-            //     if (sectionRect.top <= 0 && sectionRect.top <= sectionRect.height) {
-            //         changeCurentlyVisibleSection(index);
-            //     }
-            // });
-
-
-            
-
-            // let progressBarOverlay = window.getComputedStyle(document.querySelector('.progress', ':after').setAttribute('background-color', 'red'));
-        });
 
         if (!!window.IntersectionObserver) {
             console.log('INTEROBS supported');
@@ -197,16 +170,38 @@
             messageTextAreaObserver.observe(messageTextAreaGroup);
             
             console.log(preWorldComeTogether);
-            let preWorldComeTogetherObserver = new IntersectionObserver(function(entries, observer) {
-                // console.log(entry);
+            let foldGoneObserver = new IntersectionObserver(function(entries, observer) {
+                console.log(entries[0]);
                 if (entries[0].isIntersecting) {
                     // console.log(entry.target);
-                    entries[0].target.classList.add('pre=world-come-together-slid');
+                    header.classList.remove('header-stuck');
+                    headerNav.classList.remove('header-stuck__nav');
+                    headerLinks.forEach(function(headerLink) {
+                        headerLink.classList.remove('header-stuck__nav-link');
+                    });
+                    // header.classList.add('header-unstuck');
+                    // observer.unobserve(entries[0].target);
+                }else {
+                    header.classList.add('header-stuck');
+                    headerNav.classList.add('header-stuck__nav');
+                    headerLinks.forEach(function(headerLink) {
+                        headerLink.classList.add('header-stuck__nav-link');
+                    });
+                }
+                
+            }, {threshold: 0.5});
+            foldGoneObserver.observe(fold);
+
+            let preWorldComeTogetherObserver = new IntersectionObserver(function(entries, observer) {
+                // console.log(entries[0]);
+                if (entries[0].isIntersecting) {
+                    // console.log(entry.target);
+                    entries[0].target.classList.add('pre-world-come-together-slid');
                     // observer.unobserve(entries[0].target);
                 }else {
                     console.log('sectio not intersecting');
                 }
-            }, {threshold: 0.6,});
+            }, {threshold: 0.6});
             preWorldComeTogetherObserver.observe(preWorldComeTogether);
             
             console.log(preWorldComeTogether);

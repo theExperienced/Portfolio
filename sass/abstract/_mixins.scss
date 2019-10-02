@@ -22,7 +22,37 @@
     visibility: collapse;
 }
 
+%header-nav-link {
 
+    &--myself {
+            
+        letter-spacing: .3rem;
+        // font-weight: 900;
+        // font-size: 3rem;
+        border: 3px solid rgba(255, 255, 255, 0.281);
+        padding: 1.2rem 3rem;
+        border-radius: 15px;
+        
+        &:hover {
+            color: white;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            box-shadow: inset 0 0 1.7rem .2rem rgba(66, 35, 35, 0.15);
+        }
+    }
+
+    &--skills,
+    &--ambitions,
+    &--projects,
+    &--contact {
+        
+        color: rgba(0, 0, 0, 0.37);
+
+        &:hover {
+            
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+}
 // @mixin rotate-blade-animation($blade-number) {
 //     @keyframes rotate-blade {
 //         0% {
