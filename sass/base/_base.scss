@@ -3,21 +3,26 @@
     margin:0;
     padding: 0;
     box-sizing: inherit;
+    font-family: inherit;
 }
 
 html {
     // scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 62.5%;
 
-    @include respond(big-desktop) {
-        font-size: 75%;
+    @include respond(large) {
+        // font-size: 75%;
     }
-    @include respond(tab-land) {
+    @include respond(medium) {
         font-size:56.25%;
     }
-    @include respond(tab-port) {
+    @include respond(medium-small) {
         font-size: 50%;
+    }
+    @include respond(small) {
+        font-size: 40%;
     }
 }
 
@@ -29,14 +34,10 @@ body {
 
 a:active,
 a:visited,
-a:focus {
-    // color: inherit;
-
-    &, a:link {
-        text-decoration: none;
-
-    }
-
+a:focus,  
+a:link {
+    
+    text-decoration: none;
 }
 
 

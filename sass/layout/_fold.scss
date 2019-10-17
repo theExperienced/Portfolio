@@ -1,11 +1,58 @@
 .fold {
     // padding-right:10rem;
     // background-image: linear-gradient(to left, rgb(130, 64, 168), rgb(182, 88, 116));
-    
+    position: relative;
     height: 90rem;
-    background-image: url('../img/header-main-2.svg');
+    background-image: linear-gradient(160deg, rgba(0, 0, 0, 0.3) 5%, transparent 50%),
+                          linear-gradient(-160deg, rgba(0, 0, 0, 0.3) 5%, transparent 50%), 
+                        url('../img/header-main-4.svg');
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include respond(large) {
+        height: 75rem;
+    }
+    
+//     @include respond(medium) {
+//         height: 65
+// rem;
+//     }
+
+    &__name {
+        position: absolute;
+        top:23.5%;
+        left: 4%;
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 900;
+        font-size: 8rem;
+        color: white; 
+        text-shadow: 1px 1px 3px rgb(52, 224, 138);
+
+        @include respond(large) {
+            top: 18%;
+            font-size: 7rem;
+            display:flex;
+            flex-direction: column;
+        }
+
+        @include respond(medium) {
+            left: 5%;
+            font-size: 6rem;
+        }
+    }
+
+    &__front-end {
+        position: absolute;
+        top: 35%;
+        right:5.5%;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 100;
+        font-size: 5rem;
+    }
+
+    &__descent-begin {
+        
+    }
     // &__overlay {
     //     width: 97%;
     //     height:92%;

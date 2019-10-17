@@ -10,33 +10,32 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Vollkorn|Josefin+Slab&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css?family=Courgette|Aladin|Merienda|Satisfy|Inconsolata|Shadows+Into+Light|Shadows+Into+Light+Two|Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Titillium+Web|Roboto|Dancing Script|Courgette|Aladin|Merienda|Satisfy|Inconsolata|Shadows+Into+Light|Shadows+Into+Light+Two|Yellowtail&display=swap');
 
 .section-heading {
-
-    position: sticky;
-    top: 15rem;
-    height: fit-content;
-    font-size: 7rem;
-    font-family: 'Merienda', cursive;
-    writing-mode: vertical-rl;
     
-    // letter-spacing: 1px;
-
-    // font-family: 'Quicksand', sans-serif;
-    // font-family: 'Dosis', sans-serif;
-    // font-family: 'Josefin Sans', sans-serif;
-    // font-family: 'Anton', sans-serif;
-    color: rgba(0, 0, 0, .15);
-    font-weight: 900;
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 1px 1px 0px rgba($color-secondary, 1);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 11rem;
+    -webkit-background-clip: text;
+    background-color: rgba($color-primary-light, .8);
+    color: transparent;
+    font-weight: 100;
     text-transform: capitalize;
 
+    @include respond(medium) {
+        margin-bottom: 5rem;
+    }
 }
 
 .myself-section__bio {
     color: rgba(0, 0, 0, .5);
     font-weight: 100;
     font-size:2.4rem;
-    font-family: 'Courgette', cursive;
+    line-height: 1.5;
 }
 
