@@ -705,15 +705,15 @@ input, textarea, button {
     transform: scale(0.96);
     left: 0;
     transition: all .25s ease-in;
-    background-color: rgba(240, 196, 138, 0.7); }
+    background-color: rgba(0, 0, 0, 0.75); }
     .projects-section__item-overlay.project-item-overlay-visible {
       transform: scale(1);
       opacity: 1; }
   .projects-section__item-description {
-    background: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 1.75rem;
     width: 85%;
+    font-weight: 100;
     margin: 0 auto;
     border-radius: .5rem;
     padding: 1.3rem 5%;
@@ -722,7 +722,6 @@ input, textarea, button {
     font-size: 3rem;
     color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
     line-height: 7.7rem;
     text-align: center;
     width: 8rem;

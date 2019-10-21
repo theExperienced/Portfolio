@@ -359,7 +359,7 @@
         transform: scale(.96);
         left: 0;
         transition: all .25s ease-in;
-        background-color: rgba($color-secondary-light, 0.7);
+        background-color: rgba(0, 0, 0, 0.75);
 
         &.project-item-overlay-visible {
             transform: scale(1);
@@ -368,10 +368,11 @@
     }
 
     &__item-description {
-        background: rgba(0, 0, 0, 0.6);
+        // background: rgba(0, 0, 0, 0.6);
         color: rgba(255, 255, 255, 1);
         font-size: 1.75rem;
         width: 85%;
+        font-weight: 100;
         margin: 0 auto;
         border-radius: .5rem;
         padding: 1.3rem 5%;
@@ -383,7 +384,7 @@
         color: rgba(255, 255, 255, .9);
         // border: 2px solid rgba(255, 255, 255, 1);
         border-radius: 50px;
-        background-color: rgba(0, 0, 0, 0.6);
+        // background-color: rgba(0, 0, 0, 0.6);
         line-height: 7.7rem;
         text-align: center;
         width: 8rem;
