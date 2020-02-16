@@ -82,8 +82,8 @@
                 width: 0%;
                 position: absolute;
                 bottom: -50%;
-                left: 50%;
-                transform: translate(-50%);
+                left: 0;
+                // transform: translate(-50%);
                 height: 2px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.95);
@@ -97,7 +97,7 @@
 
             &:hover::after {
                 
-                width: 90%;
+                width: 100%;
             }
         }
 
