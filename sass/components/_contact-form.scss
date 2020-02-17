@@ -17,7 +17,7 @@
         position: relative;
 
         @include respond(small) {
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
 
             &:focus-within {
                 .contact-form__label {
@@ -82,7 +82,6 @@
             transform-origin: center;
             animation: textarea-shimmering-lights 1s 1s ease-in 4 backwards;
         }
-
     }
 
     &__input {

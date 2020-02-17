@@ -14,6 +14,13 @@
     </div> -->
         
         <header class="header">
+            <input id="header-toggle" type="checkbox" class="header__input">
+            <label class="header__toggle" for="header-toggle">
+                <span class="header__toggle-stripe header__toggle-stripe--0"></span>
+                <span class="header__toggle-stripe header__toggle-stripe--1"></span>
+                <span class="header__toggle-stripe header__toggle-stripe--2"></span>
+                <span class="header__toggle-stripe header__toggle-stripe--3"></span>
+            </label>
             <ul class="header__nav">
                 <li class="header__nav-item header__nav-item--myself"><a class="header__nav-link header__nav-link--myself" href="#myself-section">Myself</a></li>
                 <li class="header__nav-item header__nav-item--not-myself"><a class="header__nav-link header__nav-link--not-myself" href="#skills-section">Skills</a></li>
@@ -25,7 +32,7 @@
         </header>
          <div class="fold">
              <h1 class="fold__name"><span>Daniel</span> <span>Mizrachi</span></h1>
-             <h2 class="fold__front-end">Front End Developer</h2>
+             <h2 class="fold__front-end"><span>Front </span> <span>End </span> <span>Developer</span></h2>
             <!-- <div class="fold__container">
                 <div class="fold__heading-container">
                     <h1 class="fold__heading">
@@ -60,14 +67,15 @@
                 <div class="section__container myself-section__container">
                     <p class="myself-section__bio myself-section__bio">
                         Having been introduced to HTML midst the desolate web landscape of the early 2000's,
-                        yet too blind to realize the appeal, and fortunate enough to have been reintroduced years later,
-                        I am virtually a self taught front end developer. <br>&emsp;As someone with a tendency to express
-                        himself, using HTML aided by CSS, sprinkled with JS is one heck of a way of doing just that, once you get the hang of it. 
+                        <!-- yet too blind to realize the appeal, and fortunate enough to have been reintroduced years later, -->
+                        I am virtually a self taught front end developer. <br>&emsp;Self expression courses through my veins, and front end developing is my partner in crime.
+                        <!-- Having a tendency to express
+                        myself, using HTML aided by CSS, sprinkled with JS is one heck of a way of doing just that, once you get the hang of it.  -->
                         I love experimenting with shapes, sizes, colors, shadows, varying levels of opacity (and lest we forget fonts) and mixing 
                         them together. Add to the concoction the ability to move stuff around the page and the power of animations, and the result
-                        can turn out to be quite sublime. 
+                        can be quite sublime. 
                     
-                        <br>&emsp;So, "A Blank Canvas" would be an appropriate answer to "What do you get your kick out of?"
+                        <br>&emsp;So, "A Blank Canvas" would be an good answer to "What do you get your kick out of?"
                         <br>That and "Rocket League".
     
                     </p>
@@ -92,7 +100,7 @@
                     <div class="skills-section__skill-box"><img src="img/logos/js.svg" alt="" class="skills-section__img"></div>
                     <div class="skills-section__skill-box"><img src="img/logos/sass.svg" alt="" class="skills-section__img"></div>
                     <div class="skills-section__skill-box"><img src="img/logos/react.svg" alt="" class="skills-section__img"></div>
-                    <div class="skills-section__skill-box"><img src="img/logos/jquery.svg" alt="" class="skills-section__img"></div>
+                    <div class="skills-section__skill-box"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1u%0D%0AcyMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB4bWxu%0D%0AczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1%0D%0Acmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHZpZXdCb3g9IjAgMCA1MTggMjAyIj4KIDxwb2x5Z29u%0D%0AIHBvaW50cz0iMCAwIDAgMTczIDE0NCAxNzMgMTQ0IDIwMiAyNTkgMjAyIDI1OSAxNzMgNTE4IDE3%0D%0AMyA1MTggMCIgZmlsbD0iI0NCMzgzNyIvPgogPGcgZmlsbD0iI2ZmZiI+CiAgPHBvbHlnb24gcG9p%0D%0AbnRzPSI4NiAyOSAyOSAyOSAyOSA1OCAyOSAxNDQgODYgMTQ0IDg2IDU4IDExNSA1OCAxMTUgMTQ0%0D%0AIDE0NCAxNDQgMTQ0IDU4IDE0NCAyOSIvPgogIDxwYXRoIGQ9Im0xNzMgMjl2MTQ0aDU4di0yOWg1%0D%0AN3YtMTE1aC0xMTV6bTg2IDg2aC0yOHYtNTdoMjh2NTd6Ii8+CiAgPHBvbHlnb24gcG9pbnRzPSIz%0D%0ANzQgMjkgMzE3IDI5IDMxNyA1OCAzMTcgMTQ0IDM3NCAxNDQgMzc0IDU4IDQwMyA1OCA0MDMgMTQ0%0D%0AIDQzMiAxNDQgNDMyIDU4IDQ2MSA1OCA0NjEgMTQ0IDQ5MCAxNDQgNDkwIDU4IDQ5MCAzMSA0OTAg%0D%0AMjkiLz4KIDwvZz4KPC9zdmc+Cg==" alt="" class="skills-section__img"></div>
                     <div class="skills-section__skill-box"><img src="img/logos/git.svg" alt="" class="skills-section__img"></div>
                 </div>
             </section>
@@ -120,7 +128,7 @@
                 <p class="goals-section__world-come-together-word goals-section__world-come-together-word--4">place</p>
             </section> -->
             <section id="projects-section" class="section projects-section">
-                <h2 class="section-heading seaction-heading--goals">projects</h2>
+                <h2 class="section-heading seaction-heading--projects">projects</h2>
                 <div class="section__container projects-section__container">
                     <div class="projects-section__item">
                         <div class="projects-section__img-container">
@@ -171,7 +179,7 @@
                         <div class="projects-section__img-container">
                             <img class="projects-section__img" src="img/projectImgs/project-6.png" alt="">
                             <div class="projects-section__item-overlay" data-dest="https://theexperienced.github.io/MockUpResponsive">
-                                <p class="projects-section__item-description">A placeholder, not for long</p>
+                                <p class="projects-section__item-description">A fully responsive webpage, maneuvering between Flexbox and Grid</p>
                                 <!-- <span class="projects-section__item-go">Go</span> -->
                             </div>
                         </div>
@@ -227,18 +235,19 @@
 
         let vh = (window.innerHeight || document.documentElement.clientHeight);
         let currentlyVisibleSectionIndex = -1;
+
+        let fold = document.querySelector('.fold');
         let header = document.querySelector('header.header');
         let headerNav = document.querySelector('.header__nav');
-        let fold = document.querySelector('.fold');
-        let descenBegin = document.querySelector('.descent-begin');
+        let headerInput = document.querySelector('.header__input');
         let headerItems = document.querySelectorAll('.header__nav-item');
         let headerLinks = document.querySelectorAll('.header__nav-link');
         let sections = document.querySelectorAll('.section');
         let messageTextAreaGroup = document.querySelector('.contact-form__group--message');
         let contactFormInputs = document.querySelectorAll('.contact-form__input');
         let skillBoxes = document.querySelectorAll('.skills-section__skill-box');
-        let preWorldComeTogetherContainer = document.querySelector('.goals-section__pre-world-come-together-container');
-        let preWorldComeTogether = document.querySelector('.goals-section__pre-world-come-together');
+        // let preWorldComeTogetherContainer = document.querySelector('.goals-section__pre-world-come-together-container');
+        // let preWorldComeTogether = document.querySelector('.goals-section__pre-world-come-together');
         let projectItems = document.querySelectorAll('.projects-section__item');
         let projectItemsOverlays = document.querySelectorAll('.projects-section__item-overlay');
 
@@ -279,38 +288,40 @@
             // console.log(preWorldComeTogether);
             let stuckHeaderObserver = new IntersectionObserver(function(entries, observer) {
                 // console.log(entries[0]);
-                if (entries[0].isIntersecting) {
-                    // console.log(entry.target);
-                    header.classList.remove('header-stuck');
-                    headerNav.classList.remove('header-stuck__nav');
-                    headerLinks.forEach(function(headerLink) {
-                        headerLink.classList.remove('header-stuck__nav-link');
-                    });
-                    // header.classList.add('header-unstuck');
-                    // observer.unobserve(entries[0].target);
-                }else {
-                    header.classList.add('header-stuck');
-                    headerNav.classList.add('header-stuck__nav');
-                    headerLinks.forEach(function(headerLink) {
-                        headerLink.classList.add('header-stuck__nav-link');
-                    });
+                if (screen.width > 500) {
+                    if (entries[0].isIntersecting) {
+                        // console.log(entry.target);
+                        header.classList.remove('header-stuck');
+                        headerNav.classList.remove('header-stuck__nav');
+                        headerLinks.forEach(function(headerLink) {
+                            headerLink.classList.remove('header-stuck__nav-link');
+                        });
+                        // header.classList.add('header-unstuck');
+                        // observer.unobserve(entries[0].target);
+                    }else {
+                        header.classList.add('header-stuck');
+                        headerNav.classList.add('header-stuck__nav');
+                        headerLinks.forEach(function(headerLink) {
+                            headerLink.classList.add('header-stuck__nav-link');
+                        });
+                    }
                 }
                 
             }, {threshold: 0.35});
             stuckHeaderObserver.observe(fold);
 
-            let preWorldComeTogetherContainerObserver = new IntersectionObserver(function(entries, observer) {
-                // console.log(entries[0]);
-                if (entries[0].isIntersecting) {
-                    // console.log(entry.target);
-                    preWorldComeTogether.classList.add('pre-world-come-together-slid');
-                    observer.unobserve(entries[0].target);
-                }else {
-                    return;
-                    // console.log('sectio not intersecting');
-                }
-            }, {threshold: 1});
-            preWorldComeTogetherContainerObserver.observe(preWorldComeTogetherContainer);
+            // let preWorldComeTogetherContainerObserver = new IntersectionObserver(function(entries, observer) {
+            //     // console.log(entries[0]);
+            //     if (entries[0].isIntersecting) {
+            //         // console.log(entry.target);
+            //         preWorldComeTogether.classList.add('pre-world-come-together-slid');
+            //         observer.unobserve(entries[0].target);
+            //     }else {
+            //         return;
+            //         // console.log('sectio not intersecting');
+            //     }
+            // }, {threshold: 1});
+            // preWorldComeTogetherContainerObserver.observe(preWorldComeTogetherContainer);
 
             let skillsSectionVisibleObserver = new IntersectionObserver(function(entries, observer) {
                 if (entries[0].isIntersecting) {
@@ -383,6 +394,10 @@
             const sectionOriginY = sections[index].getBoundingClientRect().y;
             headerLink.addEventListener('click', function() {
                 window.scrollTo({top: sectionOriginY + 75});
+
+                if (screen.width <= 500) {
+                    headerInput.checked = false;
+                }
             });
         });
 
