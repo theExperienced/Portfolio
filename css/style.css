@@ -652,13 +652,15 @@ input, textarea, button {
 
 .skills-section__container {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(25rem, 30rem));
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 10rem;
   padding-left: 9rem;
   padding-right: 9rem;
   margin: 0;
   width: 100%; }
+  @media only screen and (max-width: 43.75em) {
+    .skills-section__container {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); } }
 
 .skills-section__skill-box {
   opacity: 0;
@@ -688,6 +690,8 @@ input, textarea, button {
       transition: opacity 0.45s 1.5s linear, transform 0.45s 1.5s linear; }
     .skills-section__skill-box.skill-box-appear:nth-child(7) {
       transition: opacity 0.45s 1.8s linear, transform 0.45s 1.8s linear; }
+    .skills-section__skill-box.skill-box-appear:nth-child(8) {
+      transition: opacity 0.45s 2.1s linear, transform 0.45s 2.1s linear; }
 
 .skills-section__img {
   display: block;
@@ -696,9 +700,10 @@ input, textarea, button {
   max-width: 27rem;
   max-height: 25rem;
   object-fit: contain; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 43.75em) {
     .skills-section__img {
-      max-height: 23rem; } }
+      max-height: 20rem;
+      max-width: 22rem; } }
 
 .projects-section {
   padding-bottom: 10rem; }
@@ -745,9 +750,11 @@ input, textarea, button {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
+    padding-top: 2rem;
     bottom: 0;
     opacity: 0;
+    box-shadow: 0 0px 7px 1px rgba(240, 196, 138, 0.75), 0 2px 10px 1px rgba(0, 0, 0, 0.35);
     transform: translateY(10%);
     left: 0;
     transition: all .25s ease-in;
@@ -755,9 +762,9 @@ input, textarea, button {
     @media only screen and (max-width: 43.75em) {
       .projects-section__item-overlay {
         opacity: 1;
-        height: 100%;
+        height: 85%;
         transform: translateY(0);
-        background-color: rgba(255, 255, 255, 0.85); } }
+        background-color: rgba(255, 255, 255, 0.5); } }
     .projects-section__item-overlay.project-item-overlay-visible {
       opacity: 1; }
   .projects-section__item-description {
@@ -770,7 +777,9 @@ input, textarea, button {
     text-align: justify; }
     @media only screen and (max-width: 43.75em) {
       .projects-section__item-description {
-        font-size: 2rem; } }
+        font-size: 2.5rem;
+        color: #f0c48a;
+        text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 3px black, 1px 1px 3px black, 0px 0px 10px rgba(0, 0, 0, 0.7); } }
 
 .contact-section {
   overflow: hidden;

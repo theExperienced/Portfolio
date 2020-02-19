@@ -101,13 +101,17 @@
     &__container {
             
         display: grid;
-        grid-template-rows: repeat(auto-fit, minmax(25rem, 30rem));
+        // grid-template-rows: repeat(auto-fit, minmax(25rem, 30rem));
         grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
         grid-gap: 10rem; 
         padding-left: 9rem;
         padding-right: 9rem;
         margin: 0;
         width: 100%;
+
+        @include respond(small) {
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }
     }
 
     &__skill-box {
@@ -129,10 +133,9 @@
             opacity: 1;
             $delay: 0;
 
-            @for $i from 1 through 7 {
+            @for $i from 1 through 8 {
                 &:nth-child(#{$i})  {
                     transition: opacity .45s #{$delay}s linear, transform .45s #{$delay}s linear;
-
                 }
                 $delay: $delay + 0.3;
             }
@@ -147,8 +150,9 @@
         max-height: 25rem;
         object-fit: contain;
 
-        @include respond(smallest) {
-            max-height: 23rem;
+        @include respond(small) {
+            max-height: 20rem;
+            max-width: 22rem;
         }
         
     }
@@ -355,9 +359,12 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
+        // justify-content: space-around;
+        padding-top: 2rem;
         bottom: 0;
         opacity: 0;
+        box-shadow: 0 0px 7px 1px rgba($color-secondary-light, .75), 0 2px 10px 1px rgba(black, .35);
         transform: translateY(10%);
         left: 0;
         transition: all .25s ease-in;
@@ -365,9 +372,9 @@
 
         @include respond(small) {
             opacity: 1;
-            height: 100%;
+            height: 85%;
             transform: translateY(0);
-            background-color: rgba(255, 255, 255, .85);
+            background-color: rgba(255, 255, 255, .5);
         }
 
         &.project-item-overlay-visible {
@@ -387,7 +394,9 @@
         text-align: justify;
 
         @include respond(small) {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: $color-secondary-light;
+            text-shadow: 0px -1px 1px rgba(0, 0, 0, .5), 1px 1px 3px rgba(0, 0, 0, 1), 1px 1px 3px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, .7);
         }
     }
 
