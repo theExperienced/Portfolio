@@ -103,6 +103,7 @@
         display: grid;
         // grid-template-rows: repeat(auto-fit, minmax(25rem, 30rem));
         grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        justify-content: center;
         grid-gap: 10rem; 
         padding-left: 9rem;
         padding-right: 9rem;
@@ -306,6 +307,7 @@
         display: grid;
         // grid-template-rows: repeat(auto-fit, minmax(25rem, 30rem));
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        justify-content: center;
         margin: 0;
         padding: 0;
         width: 100%;
