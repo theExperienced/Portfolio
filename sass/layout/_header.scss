@@ -33,29 +33,14 @@
             display: block;
         }
         
-        // @include respond(small) {
-        //     top: 3%;
-        //     right: 5%;
-        // }
-    
-        // &:hover &-stripe {
-        //     background: rgba(rgb(250, 250, 250), 1);
-        //     box-shadow: -1rem 0 50px 1px rgba(white, .25), 1rem 0 50px 1px rgba(white, .25);
-        //     width: 100%;
-        // }
-            
         &-stripe {
-            // display: block;
             position: absolute;
-            // border: 1px solid black;
             background: rgba(rgb(200, 200, 200), 1);
-            // border-radius: 100px;
-            // padding: 13px;
             width: 3rem;
             left: 0;
             height: 6px;
             box-shadow: 0;
-            transition: width .15s .15s    cubic-bezier(.74,1.52,.64,.9),
+            transition: width .15s .15s cubic-bezier(.74,1.52,.64,.9),
             box-shadow .15s linear
             ;
     
@@ -73,9 +58,6 @@
                     width .15s $i * .05s + 0.01s cubic-bezier(.72,1.7 + $i * 0.3,.54,.5 ),
                     top .5s .5s cubic-bezier(.74,1.52,.64,.9), 
                     transform .15s .25s ease-out;
-                    
-                    // transition-delay: $i * .05s + 0.01s;
-                    // height:  $i / 5 * 1px + 2px;
                 }
             }
     
@@ -103,13 +85,11 @@
                     ;
                     
                     &--0 {
-                        // width: 115%;
                         transform: rotateZ(45deg);
                     }
                     
                     &--1 {
                         transform: rotateZ(45deg);
-                        
                     }
                     
                     &--2 {
@@ -129,36 +109,13 @@
                 transform: translateX(0);
                 opacity: 1;
                 visibility: visible;
-                // .header__nav-item {
-                //     transform: translateX(0);
-                //     opacity: 1;
-                //     z-index: 1000000;
-                //     @for $i from 0 through 4 {
-                //         &:nth-child(#{$i}) {
-                //             transition: transform .35s $i * 0.1 + .1s ease-out,
-                //             opacity 1.2s $i * .1s + .05s ease-out;
-                //         }
-                //     }
-                    
-                //     #heart {
-                //         line-height: 1.1;
-                //     }
-                // }
             }
         }
     }
     
-    // &__secondary-background {
-    //     position: absolute;
-    //     right: 0;
-    //     top: 10rem;
-    // }
-
     &__nav {
         display: flex;
         width: 95%;
-        // justify-content: space-between;
-        // align-items: center;
         margin-left: auto;
         height: 100%;
         transition: all .15s linear;
@@ -183,10 +140,6 @@
         text-align: center;
         position: relative;
         overflow: hidden;
-        
-        // @include respond(smallest) {
-        //     color: $color-primary-dark;
-        // }
 
         &--myself {
             margin-right: auto;
@@ -197,7 +150,7 @@
         }
 
         &--not-myself {
-            margin-right: 5%;//medium-small
+            margin-right: 5%;
         
             @include respond(large) {
                 margin-right: 4%;
@@ -252,12 +205,10 @@
                 position: absolute;
                 bottom: -50%;
                 left: 0;
-                // transform: translate(-50%);
                 height: 2px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.95);
                 transition: .15s all linear;
-
             }
 
             &:hover {
@@ -330,7 +281,6 @@
         }
 
         & .header__nav-link {
-                                                //////////BORDER TRANSITION ON HOVER STILL NEEDS FIXING
             font-size: 2rem;
             border-radius: 30px;
             padding: .8rem 1.6rem;
@@ -353,7 +303,6 @@
                 border: 3px solid rgba(0, 0, 0, 0.35);
             }
         }
-
     }
     
     &.header-unstuck {
